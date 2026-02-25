@@ -16,6 +16,7 @@ end
 
 group :jekyll_plugins do
   gem 'jekyll-default-layout'
+  gem 'jekyll-optional-front-matter'
   gem 'jekyll-commonmark'
   gem 'jekyll-feed'
   gem 'jekyll-paginate'
