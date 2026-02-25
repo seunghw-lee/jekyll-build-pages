@@ -69,7 +69,9 @@ runs:
         rubygems: latest
 
     - name: Build with Jekyll
-      run: bundle exec jekyll build --trace
+      run:  |
+           echo "STARTT::Build with Jekyll"
+           bundle exec jekyll build --trace
       shell: sh
 
     - name: Upload artifact
