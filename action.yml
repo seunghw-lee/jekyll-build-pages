@@ -37,7 +37,7 @@ runs:
       name: Check out Action repository
       uses: actions/checkout@v4
       with:
-        repository: noraworld/jekyll-build-pages
+        repository: seunghw-lee/jekyll-build-pages
         ref: main
         path: jekyll-build-pages
 
@@ -69,7 +69,7 @@ runs:
         rubygems: latest
 
     - name: Build with Jekyll
-      run: bundle exec jekyll build
+      run: bundle exec jekyll build --trace
       shell: sh
 
     - name: Upload artifact
