@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build with Jekyll
-        uses: noraworld/jekyll-build-pages@main
+        uses: seunghw-lee/jekyll-build-pages@main
         with:
           use_ruby_version: ${{ inputs.use_ruby_version }}
           use_gemfile: ${{ inputs.use_gemfile }}
