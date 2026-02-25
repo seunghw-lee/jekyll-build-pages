@@ -26,10 +26,12 @@ GEM
     connection_pool (2.5.0)
     csv (3.3.3)
     drb (2.2.1)
+    duktape (2.7.0.0)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
+    execjs (2.10.0)
     ffi (1.17.1-aarch64-linux-gnu)
     ffi (1.17.1-aarch64-linux-musl)
     ffi (1.17.1-arm-linux-gnu)
@@ -136,8 +138,13 @@ GEM
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
     json (2.10.2)
+    katex (0.10.0)
+      execjs (~> 2.8)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
+    kramdown-math-katex (1.0.1)
+      katex (~> 0.4)
+      kramdown (~> 2.0)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     language_server-protocol (3.17.0.4)
@@ -228,8 +235,11 @@ GEM
       unicode-display_width (>= 1.1.1, < 3)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2025.3)
+      tzinfo (>= 1.0.0)
     unicode-display_width (2.6.0)
     uri (1.0.3)
+    wdm (0.2.0)
     webrick (1.9.1)
 
 PLATFORMS
@@ -248,6 +258,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  duktape
   jekyll
   jekyll-commonmark
   jekyll-compose
@@ -267,8 +278,12 @@ DEPENDENCIES
   jekyll-theme-chirpy
   jekyll-titles-from-headings
   jemoji
+  kramdown-math-katex
   minima
   rubocop
+  tzinfo-data
+  wdm
+  webrick
 
 BUNDLED WITH
    2.6.2

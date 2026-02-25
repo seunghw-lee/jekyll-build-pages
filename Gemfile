@@ -10,6 +10,16 @@ gem 'jemoji'
 gem 'minima'
 gem 'jekyll-theme-chirpy'
 
+# If you're using the MathJax math engine instead, free to remove the line below:
+gem "kramdown-math-katex"
+
+# A JavaScript runtime for Ruby that helps with running the katex gem above.
+gem "duktape"
+
+# Required for `jekyll serve` in Ruby 3
+gem "webrick"
+
+
 group :development do
   gem 'rubocop'
 end
@@ -35,3 +45,7 @@ group :jekyll_plugins do
   gem "jekyll-last-modified-at"
   gem "jekyll-compose"
 end
+
+gem 'wdm' if Gem.win_platform?
+gem "tzinfo-data" if Gem.win_platform?
+
