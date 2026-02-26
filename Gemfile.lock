@@ -86,8 +86,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-archives (2.3.0)
-      jekyll (>= 3.6, < 5.0)
     jekyll-commonmark (1.4.0)
       commonmarker (~> 0.22)
     jekyll-compose (0.12.0)
@@ -122,13 +120,6 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-theme-chirpy (7.3.0)
-      jekyll (~> 4.3)
-      jekyll-archives (~> 2.2)
-      jekyll-include-cache (~> 0.2)
-      jekyll-paginate (~> 1.1)
-      jekyll-seo-tag (~> 2.8)
-      jekyll-sitemap (~> 1.4)
     jekyll-titles-from-headings (0.5.3)
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
@@ -275,7 +266,6 @@ DEPENDENCIES
   jekyll-remote-theme
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-theme-chirpy
   jekyll-titles-from-headings
   jemoji
   kramdown-math-katex
@@ -286,4 +276,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.6.2
+   2.5.22

@@ -8,7 +8,7 @@ source 'https://rubygems.org'
 gem 'jekyll'
 gem 'jemoji'
 gem 'minima'
-gem 'jekyll-theme-chirpy'
+# gem 'jekyll-theme-chirpy'
 
 # If you're using the MathJax math engine instead, free to remove the line below:
 gem "kramdown-math-katex"
